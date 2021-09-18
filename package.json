@@ -1,0 +1,29 @@
+{
+  "name": "e-school",
+  "version": "1.0.0",
+  "description": " Node.js + MongoDB: JWT Authentication & Authorization",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "npm run server.js",
+    "dev": "nodemon run server.js"
+  },
+  "keywords": [
+    "node.js",
+    "express",
+    "jwt",
+    "authentication",
+    "mongodb"
+  ],
+  "author": "Parshuram Nikam <parshunikam0612@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
