@@ -17,13 +17,18 @@ const router = express.Router();
 
 router.get("/", (req, res) => {
     res.status(200).send(`<h1>Welcome to store</h1> 
-    <pre>   Methods	  Urls	          Actions 
-    POST    /api/auth/signup	signup new account 
-    POST    /api/auth/signin	login an account 
-    GET	    /api/test/all	retrieve public content 
-    GET	    /api/test/user	access User’s content 
-    GET	    /api/test/mod	access Moderator’s content 
-    GET	    /api/test/admin	access Admin’s content</pre>`);
+    <hr><pre>   
+    Methods	      Urls	                Actions 
+    POST        /signup	                signup new account 
+    POST        /login	                login an account 
+    GET	        /products               access All products content 
+    GET	        /product/:id	        access indiviual product content
+    <hr>
+    GET	        /users                      admin protected : get all users 
+    POST        /addProduct                 admin protected : Add new product
+    POST        /updateProduct/:_id	    admin protected : update a existing product                 
+    POST        /deleteProduct/:_id	    admin protected : delete a product                
+    </pre>`);
 });
 
 router.post("/login", async (req, res) => {
